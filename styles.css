@@ -15,6 +15,7 @@ header {
   background-color: var(--headerandfooter);
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -288,7 +289,12 @@ footer p {
 
   #pictures {
     transform: translateX(-10rem);
-    font-size: 0.5rem;
+  }
+
+  #pictures p {
+    font-size: 2rem;
+    width: 80%;
+    transform: translateX(-8rem);
   }
   #Contacts {
     transform: translateX(-10rem);
