@@ -280,3 +280,17 @@ footer p {
     float: right;
   }
 }
+
+@media (max-width: 768px) {
+  #grid-container {
+    transform: translateX(-10rem);
+  }
+
+  #pictures {
+    transform: translateX(-10rem);
+    font-size: 0.5rem;
+  }
+  #Contacts {
+    transform: translateX(-10rem);
+  }
+}
