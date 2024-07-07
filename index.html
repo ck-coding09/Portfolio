@@ -23,6 +23,7 @@
     />
     <link rel="manifest" href="Favicon/site.webmanifest" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
   </head>
   <body>
     <header>
@@ -39,12 +40,16 @@
     <main>
       <section class="hero">
         <div class="container-hero">
-          <img
-            src="Logo/leaning-ck-removebg.png"
-            alt="Me Leaning on the hero text"
-          />
+      
+            
+            <img 
+              src="Logo/leaning-ck-removebg.png"
+              alt="Me Leaning on the hero text"
+            />
+    
+          
          
-          <div class="hero-buttons">
+          <div class="hero-buttons hidden">
           <h1>Hello I'm Christopher!</h1>
           <p>
             I'm a High Schooler that has passions for coding and video games!
@@ -59,9 +64,9 @@
       <article class="section-header">
         <h2>My Developing Skills</h2>
       </article>
-      <section id="Skills">
+      <section id="Skills" >
         <article class="skills-img1">
-          <article class="front-end">
+          <article class="front-end hidden">
               <p>Frontend 
                   Development</p>
               <p>Percentage: 80%</p>
@@ -78,7 +83,7 @@
             src="Vectors/OrgCoral_Ofc-01_Concept-06.jpg"
             alt="vector for web design"
           />
-          <div class="text-skills">
+          <div class="text-skills hidden">
           <p>Web Design</p>
         <p>Percentage: 50%</p>
       </div>
@@ -88,7 +93,7 @@
             src="Vectors/Wavy_Tech-05_Single-01.jpg"
             alt="Vector for back end development"
           />
-          <div class="text-skills">
+          <div class="text-skills hidden">
           <p>Backend Development</p>
         <p>Percentage: N/A (Developing Skill)</p>
       </div>
@@ -104,13 +109,13 @@
             <div class="subheader">Hobbies</div>
             <img src="/Vectors/Wavy_Lst-10_Single-03.jpg" alt="taekwondo-vector" />
           </div>
-          <div class="first-row-text">
+          <div class="first-row-text hidden">
             <p>I have several hobbies but my favorites are Taekwondo and Coding!</p>
           </div>
 
         </article>
-          <article class="second-row">
-              <div class="second-row-text">
+          <article class="second-row ">
+              <div class="second-row-text hidden">
                   <p>I started coding at the age of 13 years old and i am still going strong a year later!</p>
                 </div>
                 <div class="coding-vector">
@@ -119,18 +124,19 @@
                 </div>
       </section>
       <section id="Contacts">
-        <article class="social-icons">
+        <article class="social-icons hidden">
             <img src="Icons/image 2mail.png" alt="email">
             <img src="Icons/image 3facebook.png" alt="facebook">
             <img src="Icons/image 1phone.png" alt="Phone number">
         </article>
-        <article class="Contact-info">
-            <p>sedayack@gmail.com</p>
+        <article class="Contact-info hidden">
+            <p id="mail">sedayack  
+              @gmail.com</p>
             <p><a href="https://www.facebook.com/christopherkyle.sedaya.9/">Christopher Kyle Sedaya</a></p>
-            <p>09936559413</p>
+            <p id="number">09936559413</p>
         </article>
       </section>
-      <section class="coming-soon">
+      <section class="coming-soon ">
         <article class="github-icon">
         <img src="Icons/Rectangle 11github.png" alt="Github">
         </article>

@@ -20,6 +20,7 @@ html {
   overflow-x: hidden;
   appearance: none;
   text-decoration: none;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -125,8 +126,6 @@ a:hover::before {
   font-weight: 700;
 }
 
-
-
 .hero-buttons article {
   display: flex;
   position: relative;
@@ -224,7 +223,7 @@ a:hover::before {
 
 .first-row {
   display: flex;
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
   justify-content: center;
 }
 
@@ -244,7 +243,6 @@ a:hover::before {
   display: flex;
   flex-direction: row;
   margin-left: 1rem;
-
   justify-content: center;
 }
 
@@ -329,4 +327,310 @@ footer {
 
 .credits {
   width: 75%;
+}
+
+@media (width <= 1440px) {
+  .hero h1 {
+    margin-left: 1rem;
+  }
+
+  .hero p {
+    margin-left:1rem;
+  }
+
+  #Skills {
+    width: 75%;
+    margin-left: 5rem;
+  }
+
+  #Skills p {
+    font-size: 1.1rem;
+  }
+
+  #About-me img {
+    width: 10rem;
+  }
+
+  .section-header {
+    font-size: 1rem;
+  }
+
+  #About-me p {
+    width: 75%;
+  }
+
+
+}
+
+@media (width <= 1024px) {
+  .hero h1 {
+    margin-left: 1.5rem;
+  }
+
+  .hero p {
+    margin-left:1rem;
+  }
+
+  #Skills {
+    width: 75%;
+    margin-left: 5rem;
+  }
+
+  #Skills p {
+    font-size: 1.1rem;
+  }
+
+  #About-me img {
+    width: 10rem;
+  }
+
+  .section-header {
+    font-size: 1rem;
+  }
+
+  #About-me p {
+    width: 75%;
+    font-size: 1.2rem;
+
+  }
+
+  .taekwondo-vector {
+    margin-left: 2rem;
+    width: 15rem;
+  }
+
+   .first-row-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } 
+}
+
+@media (width <= 768px) {
+  
+
+
+  .hero h1 {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+  }
+
+  .hero img {
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+
+  .hero p {
+    margin-left:1rem;
+    font-size: 0.8rem;
+  }
+
+  .hero article a {
+    font-size: 0.8rem;
+  }
+
+  #Skills {
+    width: 100%;
+    margin-left: 1.5rem;
+  }
+
+  #Skills p {
+    font-size: 0.8rem;
+    font-weight: 600;
+    width: 100%;
+  }
+
+  .web-design img {
+    width: 5rem;
+  }
+
+  #About-me img {
+    width: 8rem;
+  }
+
+.subheader h2 {
+    font-size: 0.8rem;
+
+  }
+
+  .section-header {
+    font-size: 0.8rem;
+  }
+
+  #About-me p {
+    width: 75%;
+    font-size: 1.2rem;
+
+  }
+
+  .taekwondo-vector {
+    margin-left: 2rem;
+    width: 15rem;
+  }
+
+   .first-row-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } 
+
+  .Contact-info p {
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+
+  .coming-soon-text p {
+    font-size: 1.1rem;
+  }
+
+  .github-icon img {
+    width: 100%;
+  }
+}
+
+
+@media (width <= 430px) {
+header a {
+  display: none;
+}
+
+.button-header {
+  display: block;
+}
+
+.container-hero {
+  display: flex;
+  flex-direction: column;
+}
+
+   
+  .hero h1 {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+  }
+
+  .hero img {
+    width: 25rem;
+    margin-right:  10rem;
+  }
+  
+
+  .hero-buttons {
+    transform:translateY(-10rem) ;
+  }
+
+
+  .hero article a {
+    font-size: 0.8rem;
+  }
+
+  #Skills {
+     display: grid;
+     width: 80%;
+     grid-template-columns:  repeat(1, 1fr);
+     margin-left: 2rem;
+  }
+
+#Skills img {
+  width: 5rem;
+}
+
+.skills-img1 img {
+transform: translateX(-2rem);
+}
+
+  #Skills p {
+    font-size: 0.8rem;
+    font-weight: 600;
+    width:75%;
+  }
+
+  .web-design img {
+    width: 5rem;
+
+  }
+
+  #About-me img {
+    max-width: 5rem;
+    
+  }
+
+.subheader {
+    font-size: 1rem;
+
+  }
+
+  .section-header {
+    font-size: 0.8rem;
+  }
+
+  #About-me p {
+    width: 60%;
+    font-size: 0.8rem;
+    font-weight: 600;
+
+  }
+
+  .taekwondo-vector {
+    margin-left: 2rem;
+    width: 15rem;
+  }
+
+  .coding-vector img{
+    margin-right: 10rem;
+    width: 15rem;
+   transform: translatex(-px);
+  }
+
+   .first-row-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2.5rem;
+  } 
+
+ 
+
+
+  .social-icons img {
+    width: 15%;
+  }
+
+  .Contact-info p {
+    font-size: 0.8rem;
+    font-weight: 600;
+   
+  }
+
+
+  .coming-soon {
+    width: 100%;
+    transform: translateX(-5rem);
+  }
+
+  .coming-soon-text p {
+    font-size: 0.8rem;
+    font-weight: 600;
+    width: 74%;
+  }
+
+  .github-icon img {
+    width: 100%;
+  }
+
+#number {
+  width: 60%;
+}
+}
+
+.hidden {
+
+  transform: translateX(-100%);
+  transition: ease 1s ;
+}
+
+.show {
+
+  transform: translateX(0);
+  transition: ease 1s ;
 }
