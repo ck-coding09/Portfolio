@@ -1,15 +1,12 @@
-let navlinks = document.querySelectorAll("header nav a");
-
-for (const link of navlinks) {
-  link.addEventListener("click", smoothScroll);
-}
-
-function smoothScroll(event) {
-  event.preventDefault();
-
-  const href = this.getAttribute("href");
-
-  document.querySelector(href).scrollIntoView({
-    behavior: "smooth",
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    } else {
+      entry.target.classList.remove("show");
+    }
   });
-}
+});
+
+const hiddenElements = document.querySelectorAll(".hidden");
+hiddenElements.forEach((el) => observer.observe(el));
